@@ -11,10 +11,10 @@ h1 {
 .red {
   background-color: rgb(255, 0, 0);
 }
-.two {
-  background-color: #00ff00;
+.green {
+  background-color: #007f00;
 }
-.three {
+.blue {
   background-color: rgb(0, 0, 0);
 }
 
