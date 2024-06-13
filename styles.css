@@ -26,5 +26,6 @@ h1 {
 }
 
 .blue {
-  background-color: hsl(240, 100%, 50%);
+  /* background-color: hsl(240, 100%, 50%);  Paso 66*/
+  background:linear-gradient(hsl(186, 76%, 16%)) );
 }
