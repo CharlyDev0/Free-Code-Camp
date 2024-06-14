@@ -15,17 +15,37 @@ h1 {
 
 .red {
   background: linear-gradient(
-    rgb(122, 74, 14) 0%,
-    rgb(245, 62, 113) 50%,
-    rgb(162, 27, 27) 100%
+    rgb(122, 74, 14),
+    rgb(245, 62, 113),
+    rgb(162, 27, 27)
   );
+  box-shadow: rgba(83, 14, 14, 0.8);
 }
 
 .green {
   background: linear-gradient(#55680d, #71f53e, #116c31);
+  box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
 }
 
 .blue {
   /* background-color: hsl(240, 100%, 50%);  Paso 66*/
-  background:linear-gradient(hsl(186, 76%, 16%)) );
+  /* background:linear-gradient(hsl(186, 76%, 16%)) ); Paso 67 */
+  background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%));
+}
+
+.sleeve {
+  width: 110px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-left: 10px double rgba(0, 0, 0, 0.75);
+}
+
+.cap {
+  width: 60px;
+  height: 25px;
+}
+
+.sleeve,
+.cap {
+  display: inline-block;
 }
