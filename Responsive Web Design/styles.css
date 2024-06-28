@@ -56,3 +56,8 @@ input, textarea {
   vertical-align: middle;
   min-height: 2em
 }
+
+input[type="submit"]{
+  display: block;
+  width: 60%;
+}
