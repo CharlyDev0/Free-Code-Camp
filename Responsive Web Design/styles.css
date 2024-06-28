@@ -80,3 +80,7 @@ input[type="file"] {
   border-color: white;
   min-width: 300px;
 }
+
+a{
+  color: #dfdfe2;
+}
