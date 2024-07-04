@@ -10,20 +10,51 @@
   </p>
 </body>
 <form id="survey-form">
-  <input placeholder="Name" required id="name" type="text" value="0">
-  <input placeholder="Correo Electrónico" required id="email" type="email" value="0">
-  <input placeholder="0" id="number" type="number" min="13" max="120" value="0">
-  <label id="name-label">lorem lorem</label>
-  <label id="email-label">Lorem ipsum, dolor sit amet</label>
-  <label id="number-label">Lorem ipsum, dolor sit amet</label>
-  <select name="" id="dropdown">
-    <option value="true" value="0"></option>
-    <option value="true" value="0"></option>
-    <input type="radio" name="xxxxx" id="" value="0">
-    <input type="radio" name="xxxxx" id="" value="0">
-    <input type="checkbox" name="" id="" value="0">
-    <input type="checkbox" name="" id="" value="0">
-  </select>
-  <textarea name="" id=""></textarea>
-  <input type="submit" value="Submit" id="submit">
+  <div class="input-element"><label for="" id="name-label">Nombre</label><input placeholder="Name" required id="name" type="text"
+      value="0"></div>
+
+  <div class="input-element"><label for="" id="email-label">Correo Electrónico</label><input placeholder="email" required id="email"
+      type="email" value="0"></div>
+
+  <div class="input-element"><label for="" id="number-label">Edad</label><input placeholder="age" id="number"
+      type="number" min="13" max="120" value="0" required>
+  </div>
+
+  <div>
+    <label id="number-label">Tu candidato favorito</label>
+    <select name="" id="dropdown">
+      <option value="true" value="0">Juan</option>
+      <option value="true" value="0">Cristina</option>
+  </div>
+<br>
+
+  <div>
+    <label for="">
+      <input type="radio" value="0" name="candidate"> Si
+    </label>
+  </div>
+
+  <div>
+    <label for="">
+      <input type="radio" name="candidate" value="0"> No
+    </label>
+  </div>
+
+
+ <div>
+  <label for="">
+    <input type="checkbox" name="" id="" value="0">Cero
+  </label>
+ </div>
+
+<div>
+  <label for="">
+    <input type="checkbox" name="" id="" value="1">Uno
+  </label>
+</div>
+    <div class="input-element">
+    <label for="">Comentarios</label>
+    <textarea></textarea>
+  </div>
+  <button type="submit" id="submit">Enviar</button>
 </form>
