@@ -30,3 +30,6 @@ console.log(character);
 character = "World";
 console.log(character);
 
+/* Step 08 Second Variable*/
+let secondCharacter;
+
