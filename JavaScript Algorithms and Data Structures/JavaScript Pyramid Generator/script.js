@@ -47,3 +47,7 @@ character = "World";
 let secondCharacter;
 secondCharacter = "Test";
 console.log(secondCharacter);
+
+/* Step 11 Js */
+secondCharacter = character;
+
