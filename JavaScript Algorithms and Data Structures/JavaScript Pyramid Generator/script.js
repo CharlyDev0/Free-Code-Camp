@@ -66,4 +66,7 @@ console.log(count +1);
 
 // Step 16 17 
 let count = 8;
-let rows=[];
+// let rows=[];
+
+// Step 19
+let rows = ["Naomi", "Quincy", "CamperChan"];
