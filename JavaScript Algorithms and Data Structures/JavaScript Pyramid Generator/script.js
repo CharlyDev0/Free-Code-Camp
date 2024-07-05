@@ -13,11 +13,13 @@ console.log("#########");
 /* let character = "Hello"; */
 
 /* Step 04 */
-let character = `Hello`;
+// let character = `Hello`;
 /*'sample'  */
 
 /* Step 05 */
 console.log(character);
 
 /* Step 06 */
-
+let character = "Hello";
+console.log(character);
+character = "World";
