@@ -54,3 +54,8 @@ secondCharacter = character;*/
 /* Step 12 Js */
 let character = "Hello";
 
+/* Step 13 Js */
+let profession = "teacher";
+let age = 
+console.log(profession);
+console.log(age);
