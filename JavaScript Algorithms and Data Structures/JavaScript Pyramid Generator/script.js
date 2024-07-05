@@ -61,4 +61,9 @@ console.log(profession);
 console.log(age);
 
 // Step 15
+// let count = 8;
+console.log(count +1);
+
+// Step 16 17 
 let count = 8;
+let rows=[];
