@@ -7,4 +7,7 @@ console.log(" ####### ");
 console.log("#########");
 
 /* Step 02 */
-let character;
+/* let character; */
+
+/* Step 03 */
+let character = "Hello";
