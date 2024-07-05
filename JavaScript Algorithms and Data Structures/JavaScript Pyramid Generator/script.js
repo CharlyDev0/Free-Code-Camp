@@ -14,5 +14,10 @@ console.log("#########");
 
 /* Step 04 */
 let character = `Hello`;
-/*'muestra'  */
+/*'sample'  */
+
+/* Step 05 */
+console.log(character);
+
+/* Step 06 */
 
