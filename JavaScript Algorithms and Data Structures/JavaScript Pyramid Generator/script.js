@@ -25,11 +25,25 @@ console.log(character);
 character = "World";*/
 
 // Step 07
+/* let character = "Hello";
+console.log(character);
+character = "World";
+console.log(character);*/
+
+/* Step 08 Second Variable*/
+// let secondCharacter;
+
+/* Step 09 Js 
 let character = "Hello";
 console.log(character);
 character = "World";
-console.log(character);
-
-/* Step 08 Second Variable*/
 let secondCharacter;
+console.log(secondCharacter);*/
 
+/* Step 10 Js */
+let character = "Hello";
+console.log(character);
+character = "World";
+let secondCharacter;
+secondCharacter = "Test";
+console.log(secondCharacter);
