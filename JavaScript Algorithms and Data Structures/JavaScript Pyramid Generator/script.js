@@ -40,14 +40,17 @@ character = "World";
 let secondCharacter;
 console.log(secondCharacter);*/
 
-/* Step 10 Js */
+/* Step 10 Js 
 let character = "Hello";
 console.log(character);
 character = "World";
 let secondCharacter;
 secondCharacter = "Test";
-console.log(secondCharacter);
+console.log(secondCharacter);*/
 
-/* Step 11 Js */
-secondCharacter = character;
+/* Step 11 Js 
+secondCharacter = character;*/
+
+/* Step 12 Js */
+let character = "Hello";
 
