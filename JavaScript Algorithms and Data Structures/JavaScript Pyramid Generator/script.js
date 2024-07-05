@@ -59,3 +59,6 @@ let profession = "teacher";
 let age = 
 console.log(profession);
 console.log(age);
+
+// Step 15
+let count = 8;
