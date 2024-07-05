@@ -16,10 +16,17 @@ console.log("#########");
 // let character = `Hello`;
 /*'sample'  */
 
-/* Step 05 */
-console.log(character);
+/* Step 05 
+console.log(character);*/
 
-/* Step 06 */
+/* Step 06 
+let character = "Hello";
+console.log(character);
+character = "World";*/
+
+// Step 07
 let character = "Hello";
 console.log(character);
 character = "World";
+console.log(character);
+
