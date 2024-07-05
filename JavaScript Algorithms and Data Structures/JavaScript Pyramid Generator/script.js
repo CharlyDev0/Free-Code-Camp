@@ -10,4 +10,9 @@ console.log("#########");
 /* let character; */
 
 /* Step 03 */
-let character = "Hello";
+/* let character = "Hello"; */
+
+/* Step 04 */
+let character = `Hello`;
+/*'muestra'  */
+
