@@ -17,7 +17,7 @@ console.log(cities);
 cities[cities.length - 1] = "Mexico City";
 console.log(cities);
 
-/* Step 24 */
+/* Step 26 */
 
 let rows = ["Naomi", "Quincy", "CamperChan"];
 rows.push("freeCodeCamp");
