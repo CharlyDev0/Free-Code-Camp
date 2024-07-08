@@ -22,3 +22,10 @@ console.log(cities);
 let rows = ["Naomi", "Quincy", "CamperChan"];
 rows.push("freeCodeCamp");
 console.log(rows);
+
+/* Step 27 */
+
+let rows = ["Naomi", "Quincy", "CamperChan"];
+rows.push("freeCodeCamp");
+let popped = rows.pop();
+console.log(popped);
