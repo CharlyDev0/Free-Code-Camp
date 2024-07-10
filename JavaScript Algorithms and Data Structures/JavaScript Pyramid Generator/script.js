@@ -78,3 +78,8 @@ for (const row of rows) {
 for (let i = 0; i < count; i = i + 1) {
   rows.push(character);
 }
+
+/* Step 45 */
+for (let i = 0; i < count; i = i + 1) {
+  rows.push(character.repeat(i));
+}
