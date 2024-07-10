@@ -30,5 +30,8 @@ rows.push("freeCodeCamp");
 let popped = rows.pop();
 console.log(popped);
 
-/* Step 28 Loop For */
+/* Step Loop For */
 // for ("iterator"; "condition"; "iteration") {}
+
+/* Step 34 */
+for (let i = 0; "condition"; "iteration") {}
