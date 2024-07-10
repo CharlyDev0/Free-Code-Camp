@@ -68,3 +68,8 @@ for (const row of rows) {
 for (const row of rows) {
   result = result + rows;
 }
+
+/* Step 43 */
+for (const row of rows) {
+  result = result + "\n" + row;
+}
