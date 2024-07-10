@@ -83,3 +83,8 @@ for (let i = 0; i < count; i = i + 1) {
 for (let i = 0; i < count; i = i + 1) {
   rows.push(character.repeat(i));
 }
+
+/* Step 47 */
+function padRow() {}
+
+
