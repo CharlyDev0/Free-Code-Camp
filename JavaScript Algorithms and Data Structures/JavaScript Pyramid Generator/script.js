@@ -63,3 +63,8 @@ for (let i = 0; i < count; i = i + 1) {
 /* Step 41 */
 for (const row of rows) {
 }
+
+/* Step 42 */
+for (const row of rows) {
+  result = result + rows;
+}
