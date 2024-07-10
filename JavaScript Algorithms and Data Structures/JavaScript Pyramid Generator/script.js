@@ -38,3 +38,19 @@ for (let i = 0; "condition"; "iteration") {}
 
 /* Step 35 */
 for (let i = 0; i < count; "iteration") {}
+
+for (let i = 0; i < count; i++) {  
+}
+
+/* Step 36 */
+for (let i = 0; i < count; i = i + 1) {}
+
+/* Learn Introductory JavaScript by Building a Pyramid Generator
+script.jsEditor */
+
+// https://sss.instasaverpro.com
+
+/* Step 37 */
+for (let i = 0; i < count; i = i + 1) {
+console.log(i);
+}
