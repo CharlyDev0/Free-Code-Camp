@@ -23,9 +23,12 @@ let rows = ["Naomi", "Quincy", "CamperChan"];
 rows.push("freeCodeCamp");
 console.log(rows);
 
-/* Step 27 */
+/* Step 33 */
 
 let rows = ["Naomi", "Quincy", "CamperChan"];
 rows.push("freeCodeCamp");
 let popped = rows.pop();
 console.log(popped);
+
+/* Step 28 Loop For */
+// for ("iterator"; "condition"; "iteration") {}
