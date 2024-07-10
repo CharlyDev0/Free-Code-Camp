@@ -35,3 +35,6 @@ console.log(popped);
 
 /* Step 34 */
 for (let i = 0; "condition"; "iteration") {}
+
+/* Step 35 */
+for (let i = 0; i < count; "iteration") {}
