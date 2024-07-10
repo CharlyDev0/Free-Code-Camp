@@ -87,4 +87,9 @@ for (let i = 0; i < count; i = i + 1) {
 /* Step 47 */
 function padRow() {}
 
+/* Step 51 */
+function padRow() {
+  return "Hello!";
+}
+
 
