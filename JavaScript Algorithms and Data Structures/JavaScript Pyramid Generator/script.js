@@ -99,3 +99,9 @@ function addTwoNumbers(a, b) {
 
 let sum = addTwoNumbers(5, 10);
 console.log(sum);
+
+/* Step 57 */
+
+function padRow(name) {
+  return character + name;
+}
