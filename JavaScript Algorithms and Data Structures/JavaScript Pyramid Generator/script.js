@@ -105,3 +105,29 @@ console.log(sum);
 function padRow(name) {
   return character + name;
 }
+
+/* Step 58 */
+
+
+function padRow(name) {
+  return character + name;
+  const test = "Testing";
+}
+console.log(test);
+
+
+
+// Function definition
+function padRow() {
+  const test = "Testing";
+  return test;
+}
+
+/* Step 60 */
+
+function padRow(name) {
+  const test = "Testing";
+  console.log("This works!");
+  return test;
+  console.log("This works!");
+}
