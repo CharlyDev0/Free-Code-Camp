@@ -34,5 +34,8 @@ padding: 5px;
   background: #c70d0d;
 }
 
-/* Step 26
-For now, hide your #monsterStats element with the display property. Do not change any of the other styling. */
+.stat{
+  padding-right: 10px;
+}
+/* Step 27
+Next, give your .stat elements a padding-right of 10px. */
