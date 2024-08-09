@@ -30,8 +30,6 @@ function fightDragon() {
 
 // initialize buttons
 
-/* Step 41
-Now you need to modify your display text. Change the innerText property of the text variable to be "You enter the store.". */
 
 button1.onclick = goStore;
 button2.onclick = goCave;
@@ -55,3 +53,17 @@ function fightDragon() {
   
 }
 
+/* Step 42
+Create three new empty functions called buyHealth, buyWeapon, and goTown. */
+
+function buyHealth() {
+  
+}
+
+function buyWeapon() {
+
+}
+
+function goTown() {
+  
+}
