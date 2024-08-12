@@ -35,10 +35,19 @@ button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
 
-/* Step 44
-In your goTown function, change your button elements' innerText properties to be "Go to store", "Go to cave", and "Fight dragon". Update your onclick properties to be goStore, goCave, and fightDragon, respectively.
+/* Step 46
+You have repetition in the goTown and goStore functions. Repetition in your code is a sign that you need another function.
 
-Finally, update innerText property of your text to be "You are in the town square. You see a sign that says Store.".*/
+In the previous project, you learned how to work with function parameters like this:
+
+Example Code
+function myFunction(param) {
+  console.log(param);
+}
+Function parameters act as placeholders for values that you pass to the function when you call it.
+
+Create an empty update function that takes a parameter called location.*/
+function update(location) {}
 
 function goTown() {
   button1.innerText = "Go to store";
