@@ -22,8 +22,7 @@ const cat = {
   name: "Whiskers",
 "Number of legs": 4,
 };
-console.log(cat);
-
+console.log(cat["Number of legs"]);
 
 function goStore() {
   console.log("Going to store.");
