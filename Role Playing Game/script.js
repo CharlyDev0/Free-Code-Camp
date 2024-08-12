@@ -19,7 +19,8 @@ const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
 const cat = {
-  name:"Whiskers"
+  name: "Whiskers",
+"Number of legs": 4,
 };
 console.log(cat);
 
@@ -34,7 +35,7 @@ function fightDragon() {
   console.log("Fighting dragon.");
 }
 
-/* Step 49
+/* Step 4
 */
 
 // initialize buttons
