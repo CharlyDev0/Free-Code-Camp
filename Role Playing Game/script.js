@@ -18,6 +18,9 @@ const goldText = document.querySelector("#goldText");
 const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
+const cat = {};
+console.log(cat);
+
 function goStore() {
   console.log("Going to store.");
 }
@@ -28,10 +31,8 @@ function fightDragon() {
   console.log("Fighting dragon.");
 }
 
-/* Step 47
-In your role playing game, you will be able to visit different locations like the store, the cave, and the town square. You will need to create a data structure that will hold the different locations.
-
-Use const to create a variable called locations and assign it an empty array.*/
+/* Step 48
+*/
 
 // initialize buttons
 const locations = [];
