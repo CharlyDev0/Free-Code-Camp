@@ -18,8 +18,11 @@ const goldText = document.querySelector("#goldText");
 const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
-const cat = {};
+const cat = {
+  name:"Whiskers"
+};
 console.log(cat);
+
 
 function goStore() {
   console.log("Going to store.");
@@ -31,7 +34,7 @@ function fightDragon() {
   console.log("Fighting dragon.");
 }
 
-/* Step 48
+/* Step 49
 */
 
 // initialize buttons
