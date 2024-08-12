@@ -18,11 +18,7 @@ const goldText = document.querySelector("#goldText");
 const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
-const cat = {
-  name: "Whiskers",
-"Number of legs": 4,
-};
-console.log(cat["Number of legs"]);
+
 
 function goStore() {
   console.log("Going to store.");
