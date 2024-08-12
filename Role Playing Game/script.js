@@ -28,25 +28,19 @@ function fightDragon() {
   console.log("Fighting dragon.");
 }
 
-// initialize buttons
+/* Step 47
+In your role playing game, you will be able to visit different locations like the store, the cave, and the town square. You will need to create a data structure that will hold the different locations.
 
+Use const to create a variable called locations and assign it an empty array.*/
+
+// initialize buttons
+const locations = [];
 
 button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
 
-/* Step 46
-You have repetition in the goTown and goStore functions. Repetition in your code is a sign that you need another function.
 
-In the previous project, you learned how to work with function parameters like this:
-
-Example Code
-function myFunction(param) {
-  console.log(param);
-}
-Function parameters act as placeholders for values that you pass to the function when you call it.
-
-Create an empty update function that takes a parameter called location.*/
 function update(location) {}
 
 function goTown() {
