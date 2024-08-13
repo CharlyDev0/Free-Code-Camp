@@ -19,8 +19,6 @@ const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
 
-/* Step 59
-Add a second object to your locations array (remember to separate them with a comma). Following the pattern you used in the first object, create the same properties but use the values from the goStore function. Set the name property to store.*/
 
 const locations = [
   {
@@ -59,27 +57,23 @@ button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
 
-
-function update(location) {}
+/* Step 60
+Now you can consolidate some of your code. Start by copying the code from inside the goTown function and paste it into your update function. Then, remove all the code from inside the goTown and goStore functions. */
+function update(location) {button1.innerText = "Go to store";
+button2.innerText = "Go to cave";
+button3.innerText = "Fight dragon";
+button1.onclick = goStore;
+button2.onclick = goCave;
+button3.onclick = fightDragon;
+text.innerText =
+  'You are in the town square. You see a sign that says "Store".';}
 
 function goTown() {
-  button1.innerText = "Go to store";
-  button2.innerText = "Go to cave";
-  button3.innerText = "Fight dragon";
-  button1.onclick = goStore;
-  button2.onclick = goCave;
-  button3.onclick = fightDragon;
-  text.innerText = "You are in the town square. You see a sign that says \"Store\".";
+  
 }
 
 function goStore() {
-  button1.innerText = "Buy 10 health (10 gold)";
-  button2.innerText = "Buy weapon (30 gold)";
-  button3.innerText = "Go to town square";
-  button1.onclick = buyHealth;
-  button2.onclick = buyWeapon;
-  button3.onclick = goTown;
-  text.innerText = "You enter the store.";
+  
 }
 
 function goCave() {
