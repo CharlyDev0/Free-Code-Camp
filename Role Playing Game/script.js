@@ -57,7 +57,14 @@ button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
 
-/* Step 61 */
+/* Step 62
+Now it is time to use your update function. Pass in your locations array into the update function call.
+
+You pass arguments by including them within the parentheses of the function call. For example, calling myFunction with an arg argument would look like:
+
+Código de ejemplo
+myFunction(arg)
+Pass your locations array into the update call. */
 
 function update(location) {button1.innerText = "Go to store";
 button2.innerText = "Go to cave";
@@ -69,7 +76,7 @@ text.innerText =
   'You are in the town square. You see a sign that says "Store".';}
 
 function goTown() {
-  update();
+  update(locations);
 }
 
 function goStore() {
