@@ -57,14 +57,13 @@ button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
 
-/* Step 63
-The locations array contains two locations: the "town square" and the "store". Currently you are passing that entire array into the update function.
+/* Step 64
+Now your update function needs to use the argument you pass into it.
 
-Pass in only the first element of the locations array by adding [0] at the end of the variable. For example: myFunction(arg[0]);.
+Inside the update function, change the value of the button1.innerText assignment to be location["button text"]. That way, you use bracket notation to get the "button text" property of the location object passed into the function. */
 
-This is called bracket notation. Values in an array are accessed by index. Indices are numerical values and start at 0 - this is called zero-based indexing. arg[0] would be the first element in the arg array. */
-
-function update(location) {button1.innerText = "Go to store";
+function update(location) {
+button1.innerText = location["button text"];
 button2.innerText = "Go to cave";
 button3.innerText = "Fight dragon";
 button1.onclick = goStore;
