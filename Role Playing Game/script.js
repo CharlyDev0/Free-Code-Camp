@@ -57,7 +57,7 @@ button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
 
-/* Step 69*/
+
 
 function update(location) {
 button1.innerText = location["button text"][0];
@@ -94,4 +94,13 @@ function buyHealth() {
 function buyWeapon() {
 
 }
+/* Step 70
+Create two more empty functions named fightSlime and fightBeast. These functions will be used in your upcoming cave object.*/
 
+function fightSlime() {
+
+}
+
+function fightBeast() {
+  
+}
