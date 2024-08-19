@@ -57,12 +57,7 @@ button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
 
-/* Step 68
-Finally, update the text.innerText assignment to equal the text from the location object. However, instead of using bracket notation, use dot notation.
-
-Here is an example of accessing the name property of an object called person:
-
-Example Code */
+/* Step 69*/
 
 function update(location) {
 button1.innerText = location["button text"][0];
@@ -79,7 +74,7 @@ function goTown() {
 }
 
 function goStore() {
-  
+  update(locations[1]);
 }
 
 function goCave() {
