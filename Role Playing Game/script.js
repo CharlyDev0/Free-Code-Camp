@@ -34,15 +34,15 @@ const locations = [
       "Buy weapon (30 gold)",
       "Go to town square",
     ],
-    "buttons functions": [buyHealth, buyWeapon, goTown],
+    "button functions": [buyHealth, buyWeapon, goTown],
     text: "You enter the store.",
   },
 
   {
     name: "cave",
     "button text": ["Fight slime", "Fight fanged beast", "Go to town square"],
-    "buttons functions": [fightSlime, fightBeast, goTown],
-    text: "You enter the cave. You see some monsters.",
+    "button functions": [fightSlime, fightBeast, goTown],
+    text: "You enter the cave. You see some monsters."
   },
 ];
 /* Step 71
