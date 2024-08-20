@@ -84,16 +84,14 @@ function fightDragon() {
   console.log("Fighting dragon.");
 }
 
-/* Step 73
-Now that your "store" and "cave" locations are complete, you can code the actions the player takes at those locations. Inside the buyHealth function, set gold equal to gold minus 10.
+/*Step 74
 
-For example, here is how you would set num equal to 5 less than num: num = num - 5;. */
+After the gold is updated, add a line to set health equal to health plus 10. */
 
 function buyHealth() {
   gold = gold - 10;
-  console.log(buyHealth);
+  health = health + 10;
 }
-buyHealth();
 
 function buyWeapon() {
 
