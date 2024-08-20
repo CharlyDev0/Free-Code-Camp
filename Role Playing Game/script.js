@@ -45,22 +45,8 @@ const locations = [
     text: "You enter the cave. You see some monsters."
   },
 ];
-/* Step 71
-Add a third object to the locations array. Give it the same properties as the other two objects.
 
-Set name to cave. Set button text to an array with the strings "Fight slime", "Fight fanged beast", and "Go to town square". Set the "button functions" to an array with the variables fightSlime, fightBeast, and goTown. Set the text property to "You enter the cave. You see some monsters."
 
-Paso 71 Agrega un tercer objeto a la matriz de ubicaciones. Asígnale las mismas propiedades que a los otros dos objetos. Establece el nombre en cueva. Establece el texto del botón en una matriz con las cadenas "Lucha contra el slime", "Lucha contra la bestia con colmillos" y "Ve a la plaza del pueblo". Establece las "funciones del botón" en una matriz con las variables fightSlime, fightBeast y goTown. Establece la propiedad de texto en "Entras en la cueva. Ves algunos monstruos".*/
-
-function goStore() {
-  console.log("Going to store.");
-}
-function goCave() {
-  console.log("Going to cave.");
-}
-function fightDragon() {
-  console.log("Fighting dragon.");
-}
 
 // initialize buttons
 
@@ -81,6 +67,8 @@ button3.onclick = location["button functions"][2];
 text.innerText = location.text;
 }
 
+/* Step 72*/
+
 function goTown() {
   update(locations[0]);
 }
@@ -90,11 +78,11 @@ function goStore() {
 }
 
 function goCave() {
-  
+  update(locations[2]);
 }
 
 function fightDragon() {
-  
+  console.log("Fighting dragon.");
 }
 
 
