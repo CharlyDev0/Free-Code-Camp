@@ -18,6 +18,7 @@ const goldText = document.querySelector("#goldText");
 const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
+const weapons = [];
 
 
 const locations = [
@@ -84,8 +85,8 @@ function fightDragon() {
   console.log("Fighting dragon.");
 }
 
-/*Step 79
-Inside the else statement, set text.innerText to equal "You do not have enough gold to buy health.". */
+/*Step 80
+Use const to create a weapons variable above your locations array. Assign it an empty array.*/
 
 function buyHealth() {
   /* gold = gold - 10;
