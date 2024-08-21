@@ -84,22 +84,27 @@ function fightDragon() {
   console.log("Fighting dragon.");
 }
 
-/*Step 76
-Now that you are updating the gold and health variables, you need to display those new values on the game screen. You have retrieved the healthText and goldText elements in a prior step.
+/* Step 77
+What if the player doesn't have enough gold to buy health? You should use an if statement to check if the player has enough gold to buy health.
 
-After your assignment lines, assign the innerText property of goldText to be the variable gold. Use the same pattern to update healthText with the health variable.
+In the previous project, you learned how to work with if statements like this:
 
-You can test this by clicking your "Go to store" button, followed by your "Buy Health" button.
-
-Note: Your answer should only be two lines of code. */
+Example Code
+const num = 5;
+if (num >= 3) {
+  console.log("This code will run because num is greater than or equal to 3.");
+}
+Start by placing all of the code in your buyHealth function inside an if statement. For the if statement condition, check if gold is greater than or equal to 10. */
 
 function buyHealth() {
   /* gold = gold - 10;
   health = health + 10; */
-  gold -= 10;
+  if (gold>=10) {
+      gold -= 10;
   health += 10;
   healthText.innerText = health;
   goldText.innerText = gold;
+ }
 }
 
 function buyWeapon() {
