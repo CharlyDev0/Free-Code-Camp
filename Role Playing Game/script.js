@@ -116,20 +116,15 @@ function buyHealth() {
  }
 }
 
-/* Step 85
-In the previous project, you learned how to use the increment operator to increase a variable by 1.
-
-Example Code
-let num = 5;
-num++;
-// prints 6
-console.log(num); 
-Change your currentWeaponIndex assignment to use the increment operator. */
+/* Step 86
+Now update the goldText element to display the new value of gold, and update the text element to display "You now have a new weapon.". */
 
 function buyWeapon() {
 if (gold>=30) {
   gold -= 30;
   currentWeaponIndex ++;
+  goldText.innerText = gold;
+  text.innerText = "You now have a new weapon.";
   }
 }
 
