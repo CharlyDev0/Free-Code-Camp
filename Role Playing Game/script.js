@@ -116,8 +116,8 @@ function buyHealth() {
  }
 }
 
-/* Step 86
-Now update the goldText element to display the new value of gold, and update the text element to display "You now have a new weapon.". */
+/* Step 87
+You should tell the player what weapon they bought. In between the two lines you just wrote, use let to initialize a new variable called newWeapon. Set this to equal weapons. */
 
 function buyWeapon() {
 if (gold>=30) {
@@ -125,6 +125,7 @@ if (gold>=30) {
   currentWeaponIndex ++;
   goldText.innerText = gold;
   text.innerText = "You now have a new weapon.";
+  let newWeapon = weapons;
   }
 }
 
