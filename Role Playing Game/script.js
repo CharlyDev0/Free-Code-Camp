@@ -84,17 +84,8 @@ function fightDragon() {
   console.log("Fighting dragon.");
 }
 
-/* Step 78
-Now when a player tries to buy health, it will only work if they have enough money. If they do not, nothing will happen. Add an else statement where you can put code to run if a player does not have enough money.
-
-In the previous project, you learned how to work with else statements like this:
-
-Example Code
-if (num >= 5) {
-
-} else {
-
-} */
+/*Step 79
+Inside the else statement, set text.innerText to equal "You do not have enough gold to buy health.". */
 
 function buyHealth() {
   /* gold = gold - 10;
@@ -105,7 +96,7 @@ function buyHealth() {
   healthText.innerText = health;
   goldText.innerText = gold;
  }else{
-  
+  text.innerText = "You do not have enough gold to buy health.";
  }
 }
 
