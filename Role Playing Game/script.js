@@ -121,7 +121,7 @@ Inside your buyWeapon function, add an if statement to check if gold is greater 
 
 function buyWeapon() {
 if (gold>=30) {
-  
+  gold -= 30;
   }
 }
 
