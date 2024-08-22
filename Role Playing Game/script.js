@@ -116,10 +116,6 @@ function buyHealth() {
  }
 }
 
-/*Step 101
-Once a player has the most powerful weapon, you can give them the ability to sell their old weapons.
-
-In the outer else statement, set button2.innerText to "Sell weapon for 15 gold". Also set button2.onclick to the function name sellWeapon.*/
 
 function buyWeapon() {
 if (gold >= 30)  {
@@ -142,6 +138,12 @@ if (gold >= 30)  {
 }
 }
 
+/*Step 103
+Players should not be able to sell their only weapon. Inside the sellWeapon function, add an if statement with a condition that checks if the length of the inventory array is greater than 1.*/
+
+function sellWeapon(){
+  if(inventory.length>1){
+}};
 
 function fightSlime() {
 
