@@ -1,6 +1,6 @@
 let xp = 0;
 let health = 100;
-let gold = 250;
+let gold = 50;
 let currentWeaponIndex = 0;
 let fighting;
 let monsterHealth;
@@ -116,14 +116,10 @@ function buyHealth() {
  }
 }
 
-/* Step 98
-When you were testing your function, you should have seen an error message in the console. This error is due to the condition in the buyWeapon function.
+/*Step 100
+Now that you are finished testing that portion of the buyWeapon function, you can set your gold variable back to 50.
 
-The currentWeaponIndex variable is the index of the weapons array, but array indexing starts at zero. The index of the last element in an array is one less than the length of the array.
-
-Change the if condition to check weapons.length - 1, instead of weapons.length.
-
-Test out your buyWeapon function again to see the error message disappear. */
+Note: The HTML has already been updated to reflect the original value of gold.*/
 
 function buyWeapon() {
 if (gold >= 30)  {
