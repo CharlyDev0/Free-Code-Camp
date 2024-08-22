@@ -116,10 +116,10 @@ function buyHealth() {
  }
 }
 
-/*Step 100
-Now that you are finished testing that portion of the buyWeapon function, you can set your gold variable back to 50.
+/*Step 101
+Once a player has the most powerful weapon, you can give them the ability to sell their old weapons.
 
-Note: The HTML has already been updated to reflect the original value of gold.*/
+In the outer else statement, set button2.innerText to "Sell weapon for 15 gold". Also set button2.onclick to the function name sellWeapon.*/
 
 function buyWeapon() {
 if (gold >= 30)  {
@@ -137,6 +137,8 @@ if (gold >= 30)  {
   }
 }else{
   text.innerText = "You already have the most powerful weapon!";
+  button2.innerText = "Sell weapon for 15 gold";
+  button2.onclick = sellWeapon;
 }
 }
 
