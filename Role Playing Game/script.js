@@ -116,10 +116,8 @@ function buyHealth() {
  }
 }
 
-/*Step 92
-Up until now, any time text.innerText was updated, the old text was erased. This time, use the += operator to add text to the end of text.innerText.
-
-Add the string " In your inventory you have: " - include the spaces at the beginning and the end.*/
+/*Step 93
+At the end of the second text.innerText string you just added, use the concatenation operator to add the contents of inventory to the string.*/
 
 function buyWeapon() {
 if (gold>=30) {
@@ -129,7 +127,7 @@ if (gold>=30) {
   let newWeapon = weapons[currentWeaponIndex].name;
   text.innerText = "You now have a " + newWeapon + ".";
   inventory.push(newWeapon);
-  text.innerText += " In your inventory you have: " + newWeapon + ".";
+  text.innerText += " In your inventory you have: " + newWeapon + "."+inventory;
   }
 }
 
