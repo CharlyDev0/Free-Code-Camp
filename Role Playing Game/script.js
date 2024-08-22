@@ -116,10 +116,10 @@ function buyHealth() {
  }
 }
 
-/*Step 91
-Back at the beginning of this project, you created the inventory array. Add the newWeapon to the end of the inventory array using the push() method.
+/*Step 92
+Up until now, any time text.innerText was updated, the old text was erased. This time, use the += operator to add text to the end of text.innerText.
 
-In the previous project, you learned how to work with the push method like this:*/
+Add the string " In your inventory you have: " - include the spaces at the beginning and the end.*/
 
 function buyWeapon() {
 if (gold>=30) {
@@ -129,6 +129,7 @@ if (gold>=30) {
   let newWeapon = weapons[currentWeaponIndex].name;
   text.innerText = "You now have a " + newWeapon + ".";
   inventory.push(newWeapon);
+  text.innerText += " In your inventory you have: " + newWeapon + ".";
   }
 }
 
