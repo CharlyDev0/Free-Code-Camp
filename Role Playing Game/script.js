@@ -126,7 +126,7 @@ Change the if condition to check weapons.length - 1, instead of weapons.length.
 Test out your buyWeapon function again to see the error message disappear. */
 
 function buyWeapon() {
-if (gold >= 30) {
+if (gold >= 30)  {
   if (currentWeaponIndex < weapons.length-1) {
     gold -= 30;
     currentWeaponIndex++;
@@ -139,6 +139,8 @@ if (gold >= 30) {
   } else {
     text.innerText = "You do not have enough gold to buy a weapon.";
   }
+}else{
+  text.innerText = "You already have the most powerful weapon!";
 }
 }
 
