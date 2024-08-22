@@ -116,11 +116,12 @@ function buyHealth() {
  }
 }
 
-/* Step 94
-Add an else statement to your buyWeapon function. In that statement, set text.innerText to equal "You do not have enough gold to buy a weapon.".*/
+/* Step 95
+Once a player has the best weapon, they cannot buy another one. Wrap all of the code in your buyWeapon function inside another if statement. The condition should check if currentWeaponIndex is less than 3 - the index of the last weapon.*/
 
 function buyWeapon() {
 if (gold >= 30) {
+  if(currentWeaponIndex < 3){
   gold -= 30;
   currentWeaponIndex++;
   goldText.innerText = gold;
@@ -131,6 +132,7 @@ if (gold >= 30) {
     " In your inventory you have: " + newWeapon + "." + inventory;
 } else {
   text.innerText = "You do not have enough gold to buy a weapon.";
+}
 }
 }
 
