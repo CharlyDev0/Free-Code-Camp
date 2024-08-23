@@ -9,8 +9,6 @@ const button1 = document.querySelector("#button1");
 const button2 = document.querySelector("#button2");
 const button3 = document.querySelector("#button3");
 
-
-
 const text = document.querySelector("#text");
 const xpText = document.querySelector("#xpText");
 const healthText = document.querySelector("#healthText");
@@ -37,7 +35,6 @@ const weapons = [
   },
 ];
 
-
 const locations = [
   {
     name: "town square",
@@ -60,31 +57,25 @@ const locations = [
     name: "cave",
     "button text": ["Fight slime", "Fight fanged beast", "Go to town square"],
     "button functions": [fightSlime, fightBeast, goTown],
-    text: "You enter the cave. You see some monsters."
+    text: "You enter the cave. You see some monsters.",
   },
 ];
 
-
-
 // initialize buttons
-
 
 button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
 
-
-
 function update(location) {
-button1.innerText = location["button text"][0];
-button2.innerText = location["button text"][1];
-button3.innerText = location["button text"][2];
-button1.onclick = location["button functions"][0];
-button2.onclick = location["button functions"][1];
-button3.onclick = location["button functions"][2];
-text.innerText = location.text;
+  button1.innerText = location["button text"][0];
+  button2.innerText = location["button text"][1];
+  button3.innerText = location["button text"][2];
+  button1.onclick = location["button functions"][0];
+  button2.onclick = location["button functions"][1];
+  button3.onclick = location["button functions"][2];
+  text.innerText = location.text;
 }
-
 
 function goTown() {
   update(locations[0]);
@@ -102,55 +93,60 @@ function fightDragon() {
   console.log("Fighting dragon.");
 }
 
-
 function buyHealth() {
   /* gold = gold - 10;
   health = health + 10; */
-  if (gold>=10) {
-      gold -= 10;
-  health += 10;
-  healthText.innerText = health;
-  goldText.innerText = gold;
- }else{
-  text.innerText = "You do not have enough gold to buy health.";
- }
+  if (gold >= 10) {
+    gold -= 10;
+    health += 10;
+    healthText.innerText = health;
+    goldText.innerText = gold;
+  } else {
+    text.innerText = "You do not have enough gold to buy health.";
+  }
 }
-
 
 function buyWeapon() {
-if (gold >= 30)  {
-  if (currentWeaponIndex < weapons.length-1) {
-    gold -= 30;
-    currentWeaponIndex++;
-    goldText.innerText = gold;
-    let newWeapon = weapons[currentWeaponIndex].name;
-    text.innerText = "You now have a " + newWeapon + ".";
-    inventory.push(newWeapon);
-    text.innerText +=
-      " In your inventory you have: " + newWeapon + "." + inventory;
+  if (gold >= 30) {
+    if (currentWeaponIndex < weapons.length - 1) {
+      gold -= 30;
+      currentWeaponIndex++;
+      goldText.innerText = gold;
+      let newWeapon = weapons[currentWeaponIndex].name;
+      text.innerText = "You now have a " + newWeapon + ".";
+      inventory.push(newWeapon);
+      text.innerText +=
+        " In your inventory you have: " + newWeapon + "." + inventory;
+    } else {
+      text.innerText = "You do not have enough gold to buy a weapon.";
+    }
   } else {
-    text.innerText = "You do not have enough gold to buy a weapon.";
+    text.innerText = "You already have the most powerful weapon!";
+    button2.innerText = "Sell weapon for 15 gold";
+    button2.onclick = sellWeapon;
   }
-}else{
-  text.innerText = "You already have the most powerful weapon!";
-  button2.innerText = "Sell weapon for 15 gold";
-  button2.onclick = sellWeapon;
-}
 }
 
-/* Step 104
-Inside the if statement, set gold equal to 15 more than its current value. Also update goldText.innerText to the new value.*/
+/* Step 105
+The next step is to create a variable called currentWeapon.
 
-function sellWeapon(){
-  if(inventory.length>1){
+Example Code
+let num = 1;
+if (num === 1) {
+  let num = 2; // this num is scoped to the if statement
+  console.log(num); // expected output: 2
+}
+console.log(num); // expected output: 1 (the global variable)
+Use the let keyword to create a variable named currentWeapon. Don't assign it a value yet.*/
+
+function sellWeapon() {
+  if (inventory.length > 1) {
     gold += 15;
     goldText.innerText = gold;
-}};
-
-function fightSlime() {
-
+    let currentWeapon = inventory.shift();
+  }
 }
 
-function fightBeast() {
+function fightSlime() {}
 
-}
+function fightBeast() {}
