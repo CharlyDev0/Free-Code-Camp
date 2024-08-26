@@ -191,7 +191,7 @@ On a new line, use the addition assignment operator(+=), to add the string " You
 function attack(){
   text.innerText = "The " + monsters[fighting].name + " attacks.";
   text.innerText += " You attack it with your "+ weapons[currentWeaponIndex].name +" .";
-  healt -= monster[fighting].level;
+  health -= monsters[fighting].level;
 };
 
 function dodge() {};
