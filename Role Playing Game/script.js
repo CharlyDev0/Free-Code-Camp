@@ -109,7 +109,12 @@ function fightDragon() {
   console.log("Fighting dragon.");
 }
 
-function goFight() {}
+/* Step 116
+In the goFight function, call your update function with the fourth object in locations as an argument. */
+
+function goFight() {
+  update(locations[3]);
+}
 
 function buyHealth() {
   /* gold = gold - 10;
@@ -175,8 +180,6 @@ function fightDragon() {
   goFight();
 }
 
-/* Step 114
-At the end of your code, create two empty functions named attack and dodge.*/
 
 function attack(){};
 function dodge() {};
