@@ -67,6 +67,14 @@ const locations = [
     "button functions": [fightSlime, fightBeast, goTown],
     text: "You enter the cave. You see some monsters.",
   },
+  /* Step 115
+Add a new object to the end of the locations array, following the same properties as the rest of the objects. Set name to "fight", "button text" to an array with "Attack", "Dodge", and "Run", "button functions" to an array with attack, dodge, and goTown, and text to "You are fighting a monster.". */
+  {
+    name: "fight",
+    "button text": ["Attack", "Dodge", "Run"],
+    "button functions": [attack, dodge, goTown],
+    text: "You are fighting a monster.",
+  },
 ];
 
 // initialize buttons
@@ -100,9 +108,6 @@ function goCave() {
 function fightDragon() {
   console.log("Fighting dragon.");
 }
-
-/* Step 111
-Fighting each type of monster will use similar logic. Create an empty function called goFight to manage this logic. */
 
 function goFight() {}
 
