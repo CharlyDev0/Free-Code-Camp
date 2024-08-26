@@ -185,11 +185,13 @@ function fightDragon() {
   goFight();
 }
 
-/* Step 120
-Now you can build the attack function. First, update the text message to say "The <monster name> attacks.", replacing <monster name> with the name of the monster. Remember you can use the concatenation operator for this. */
+/* Step 121
+On a new line, use the addition assignment operator(+=), to add the string " You attack it with your <weapon>." to the text value, replacing <weapon> with the player's current weapon. Additionally, remember that this line of text starts with a space so it will properly display. */
 
 function attack(){
   text.innerText = "The " + monsters[fighting].name + " attacks.";
+  text.innerText += " You attack it with your "+ weapons[currentWeaponIndex].name +" .";
+  healt -= monster[fighting].level;
 };
 
 function dodge() {};
