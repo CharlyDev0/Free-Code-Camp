@@ -67,8 +67,7 @@ const locations = [
     "button functions": [fightSlime, fightBeast, goTown],
     text: "You enter the cave. You see some monsters.",
   },
-  /* Step 115
-Add a new object to the end of the locations array, following the same properties as the rest of the objects. Set name to "fight", "button text" to an array with "Attack", "Dodge", and "Run", "button functions" to an array with attack, dodge, and goTown, and text to "You are fighting a monster.". */
+ 
   {
     name: "fight",
     "button text": ["Attack", "Dodge", "Run"],
@@ -109,11 +108,12 @@ function fightDragon() {
   console.log("Fighting dragon.");
 }
 
-/* Step 116
-In the goFight function, call your update function with the fourth object in locations as an argument. */
+/* Step 117
+Below your update call, set the monsterHealth to be the health of the current monster. You can get this value by accessing the health property of monsters[fighting] with dot notation.*/
 
 function goFight() {
   update(locations[3]);
+  monsterHealth = monsters[fighting].health;
 }
 
 function buyHealth() {
