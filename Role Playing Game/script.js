@@ -181,8 +181,16 @@ function fightDragon() {
   goFight();
 }
 
-/* Step 126
-Add an if statement to check if health is less than or equal to 0. If it is, call the lose function.*/
+/* Step 127
+You can make an else statement conditional by using else if. Here's an example:
+
+Example Code
+if (num > 10) {
+
+} else if (num < 5) {
+
+}
+At the end of your if statement, add an else if statement to check if monsterHealth is less than or equal to 0. In your else if, call the defeatMonster function.*/
 
 function attack(){
   text.innerText = "The " + monsters[fighting].name + " attacks.";
@@ -193,6 +201,8 @@ function attack(){
   monsterHealthText.innerText = monsterHealth;
 if (health <= 0) {
   lose()
-};
+} else if (monsterHealth <=0 ) {
+  defeatMonster();  
+}
 
 function dodge() {};
