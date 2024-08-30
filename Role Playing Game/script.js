@@ -181,8 +181,7 @@ function fightDragon() {
   goFight();
 }
 
-/* Step 128
-At the end of your code, create the defeatMonster and lose functions. Leave them empty for now.*/
+/* Step 129 */
 
 function attack(){
   text.innerText = "The " + monsters[fighting].name + " attacks.";
@@ -199,7 +198,10 @@ function attack(){
     defeatMonster();
   }
 
-  function dodge() {}
+  function dodge() {
+    text.innerText =
+      "You dodge the attack from the " + monsters[fighting].name + ".";
+  }
   function defeatMonster() {}
   function lose() {}
 };
