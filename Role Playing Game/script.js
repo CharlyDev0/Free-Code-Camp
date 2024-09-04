@@ -137,7 +137,7 @@ function goFight() {
   monsterHealth = monsters[fighting].health;
   monsterStats.style.display = "block";
   monsterName.innerText = monsters[fighting].name;
-  monsterHealthText.innerText = monsterHealth;
+  monsterHealthText.innerHTML = monsterHealth;
 }
 
 function buyHealth() {
