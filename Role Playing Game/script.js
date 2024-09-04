@@ -206,10 +206,6 @@ function fightDragon() {
   fighting = 2;
   goFight();
 }
-/* Step 144
-While your game is feature-complete at this stage, there are things you can do to make it more fun and engaging. To get started, you'll give monsters a dynamic attack value.
-
-Inside your attack function, change your health -= monsters[fighting].level; line to health -= getMonsterAttackValue(monsters[fighting].level);. This sets health equal to health minus the return value of the getMonsterAttackValue function, and passes the level of the monster as an argument. */
 
 function attack(){
   text.innerText = "The " + monsters[fighting].name + " attacks.";
@@ -230,7 +226,9 @@ function attack(){
     }
   }
 }
-
+/* Step 145
+Below your attack function, create an empty function named getMonsterAttackValue. It should take level as a parameter. */
+function getMonsterAttackValue(level);
   function dodge() {
     text.innerText =
       "You dodge the attack from the " + monsters[fighting].name + ".";
