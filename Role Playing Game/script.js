@@ -85,10 +85,10 @@ const locations = [
     "button functions": [goTown, goTown, goTown],
     text: 'The monster screams "Arg!" as it dies. You gain experience points and find gold.',
   },
-  /* Step 139
-In the locations array, add another object at the end. Set the name property to "lose", set "button text" to an array with three "REPLAY?" strings, set "button functions" to an array with three restart variables, and set text to "You die. &#x2620;".
+  /* Step 140
+Back to your attack function - inside the else if block, create another if and else statement. If the player is fighting the dragon (fighting would be 2), call the winGame function. Move the defeatMonster() call to the else block.
 
-In a later step, you will update the code for the &#x2620; emoticon text to properly display on the page. */
+For this step, you will need to use the strict equality (===) operator to check if fighting is equal to 2. */
   {
     name: "lose",
     "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
@@ -214,11 +214,16 @@ function attack(){
     weapons[currentWeaponIndex].power + Math.floor(Math.random() * xp) + 1;
   healthText.innerText = health;
   monsterHealthText.innerText = monsterHealth;
-  if (health <= 0) {
+    if (health <= 0) {
     lose();
   } else if (monsterHealth <= 0) {
+    if (fighting === 2) {
+     winGame();
+    } else {
     defeatMonster();
+    }
   }
+}
 
   function dodge() {
     text.innerText =
@@ -249,5 +254,4 @@ function attack(){
     healthText.innerText = health;
     xpText.innerText = xp;
     goTown();
-  }
-};
+  };
