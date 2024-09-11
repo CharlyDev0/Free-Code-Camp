@@ -207,10 +207,10 @@ function fightDragon() {
   goFight();
 }
 
-/* Step 157
-We don't want a player's only weapon to break. The logical AND operator checks if two statements are true.
+/* Step 158
+Now you can add a small easter egg (hidden feature) to your game.
 
-Use the logical AND operator && to add a second condition to your if statement. The player's weapon should only break if inventory.length does not equal (!==) one.*/
+Create a new function called easterEgg which calls the update function with locations[7] as the argument.*/
 
 function attack(){
   text.innerText = "The " + monsters[fighting].name + " attacks.";
@@ -272,7 +272,9 @@ function isMonsterHit() {
   function winGame() {
     update(locations[6]);
   }
-
+function easterEgg() {
+  update(locations[7]);
+}
   
 
   function restart() {
