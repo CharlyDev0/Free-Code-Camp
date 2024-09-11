@@ -287,8 +287,12 @@ function pickTwo(){pick(2)};
 
 function pickEight(){pick(8)}; 
 
+/* Step 163
+After your numbers array, create a while loop that runs as long as numbers.length is less than 10. */
+
 function pick(guess) {
   const numbers = [];
+  while (numbers.length < 10) {}
 }
 
   function restart() {
