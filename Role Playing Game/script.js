@@ -98,7 +98,7 @@ const locations = [
     "button functions": [restart, restart, restart],
     text: "You defeat the dragon! YOU WIN THE GAME! &#x1F389;"
   },
-  
+
   {name: "easter egg", 
     "button text": ["2", "8", "Go to town square?"], 
     "button functions": [pickTwo, pickEight, goTown], 
@@ -287,7 +287,9 @@ function pickTwo(){pick(2)};
 
 function pickEight(){pick(8)}; 
 
-function pick(guess) {}
+function pick(guess) {
+  const numbers = [];
+}
 
   function restart() {
     gold = 50;
