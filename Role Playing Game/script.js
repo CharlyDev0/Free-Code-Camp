@@ -98,9 +98,18 @@ const locations = [
     "button functions": [restart, restart, restart],
     text: "You defeat the dragon! YOU WIN THE GAME! &#x1F389;"
   },
+  
+  {name: "easter egg", 
+    "button text": ["2", "8", "Go to town square?"], 
+    "button functions": [pickTwo, pickEight, goTown], 
+    text: "You find a secret game. Pick a number above. Ten numbers will be randomly chosen between 0 and 10. If the number you choose matches one of the random numbers, you win!" 
+  },
+
+  
 ];
 
-// initialize buttons
+/* Step 161
+Add another object to your locations array. Set name to "easter egg", set "button text" to an array with the strings "2", "8", and "Go to town square?", set "button functions" to an array with the variables pickTwo, pickEight, and goTown, and text to "You find a secret game. Pick a number above. Ten numbers will be randomly chosen between 0 and 10. If the number you choose matches one of the random numbers, you win!".*/
 
 button1.onclick = goStore;
 button2.onclick = goCave;
@@ -207,10 +216,7 @@ function fightDragon() {
   goFight();
 }
 
-/* Step 158
-Now you can add a small easter egg (hidden feature) to your game.
 
-Create a new function called easterEgg which calls the update function with locations[7] as the argument.*/
 
 function attack(){
   text.innerText = "The " + monsters[fighting].name + " attacks.";
@@ -275,6 +281,12 @@ function isMonsterHit() {
 function easterEgg() {
   update(locations[7]);
 }
+
+
+function pickTwo(){pick(2)};
+
+function pickEight(){pick(8)}; 
+
 function pick(guess) {}
 
   function restart() {
