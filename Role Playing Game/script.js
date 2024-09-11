@@ -207,14 +207,10 @@ function fightDragon() {
   goFight();
 }
 
-/* Step 156
-Remember that the increment operator ++ can be used to increase a variable's value by 1. There is also a decrement operator -- that can be used to decrease a variable's value by 1. For example :
+/* Step 157
+We don't want a player's only weapon to break. The logical AND operator checks if two statements are true.
 
-Example Code
-let num = 10;
-num--;
-console.log(num); // Output: 9
-Decrement the value of currentWeaponIndex in your if statement, after you update the text.*/
+Use the logical AND operator && to add a second condition to your if statement. The player's weapon should only break if inventory.length does not equal (!==) one.*/
 
 function attack(){
   text.innerText = "The " + monsters[fighting].name + " attacks.";
@@ -239,7 +235,7 @@ if (isMonsterHit()) {
     defeatMonster();
     }
   }
-  if (Math.random() <= 0.1) {
+  if (Math.random() <= 0.1 && inventory.length !== 1) {
     text.innerText += " Your " + inventory.pop() + " breaks.";
     currentWeaponIndex--;
   }
