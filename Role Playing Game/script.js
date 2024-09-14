@@ -287,7 +287,7 @@ function pickTwo(){pick(2)};
 
 function pickEight(){pick(8)}; 
 
-/* Step 167 Loop For
+/* Step 168
  */
 
 function pick(guess) {
