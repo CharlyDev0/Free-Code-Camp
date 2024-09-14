@@ -287,8 +287,8 @@ function pickTwo(){pick(2)};
 
 function pickEight(){pick(8)}; 
 
-/* Step 166
-At the end of the string, before the final quote, insert the new line escape character \n. This will cause the next part you add to text.innerText to appear on a new line. */
+/* Step 167 Loop For
+ */
 
 function pick(guess) {
   const numbers = [];
