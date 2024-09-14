@@ -287,12 +287,14 @@ function pickTwo(){pick(2)};
 
 function pickEight(){pick(8)}; 
 
-/* Step 163
-After your numbers array, create a while loop that runs as long as numbers.length is less than 10. */
+/* Step 164
+Inside your while loop, push a random number between 0 and 10 to the end of the numbers array. You can create this random number with Math.floor(Math.random() * 11). */
 
 function pick(guess) {
   const numbers = [];
-  while (numbers.length < 10) {}
+  while (numbers.length < 10) {
+    numbers.push(Math.floor(Math.random() * 11));
+  }
 }
 
   function restart() {
