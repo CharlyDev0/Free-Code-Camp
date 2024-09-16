@@ -287,19 +287,8 @@ function pickTwo(){pick(2)};
 
 function pickEight(){pick(8)}; 
 
-/* Step 169
-The .includes() method determines if an array contains an element and will return either true or false.
-
-Here is an example of the .includes() syntax:
-
-Example Code
-const numbersArray = [1, 2, 3, 4, 5]
-const number = 3
-
-if (numbersArray.includes(number)) {
-  console.log("The number is in the array.")
-}
-After your for loop, add an if statement to check if the guess is in the numbers array. You can use the .includes() method to check if the array contains the guess.
+/* Step 170
+Inside the if statement, add the string "Right! You win 20 gold!" to the end of text.innerText. Also, add 20 to the value of gold and update the goldText.innerText.
  */
 
 function pick(guess) {
@@ -312,6 +301,9 @@ function pick(guess) {
    text.innerText += numbers[i] + "\n";
   }
     if (numbers.includes(guess)) {
+      text.innerText += "Right! You win 20 gold!";
+      gold += 20;
+      goldText.innerText = gold;
     }
   
 }
