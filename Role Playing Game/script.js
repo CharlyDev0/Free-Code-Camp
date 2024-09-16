@@ -287,9 +287,8 @@ function pickTwo(){pick(2)};
 
 function pickEight(){pick(8)}; 
 
-/* Step 170
-Inside the if statement, add the string "Right! You win 20 gold!" to the end of text.innerText. Also, add 20 to the value of gold and update the goldText.innerText.
- */
+/* Step 171
+Now add an else statement. Inside, add "Wrong! You lose 10 health!" to the end of text.innerText. Subtract 10 from health and update healthText.innerText.*/
 
 function pick(guess) {
   const numbers = [];
@@ -304,6 +303,10 @@ function pick(guess) {
       text.innerText += "Right! You win 20 gold!";
       gold += 20;
       goldText.innerText = gold;
+    }else{
+      text.innerText += "Wrong! You lose 10 health!";
+      health -= 10;
+      healthText.innerText = health;
     }
   
 }
