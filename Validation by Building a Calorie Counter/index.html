@@ -13,15 +13,21 @@
     <h1>Calorie Counter</h1>
     <div class="container">
 
-      <!-- Step 3
-Your input element needs some additional attributes. Give it a type set to number to only allow numeric inputs, a min attribute set to 0 to only allow positive numbers, and a placeholder set to Daily calorie budget.
+      <!-- Step 4
+In your form, users should have the capability to add various meal types along with their calorie counts.
 
-Finally, mark the input element as required. -->
+Create a fieldset element with the id set to breakfast.
+
+Within that element, create a legend with the text Breakfast, and an empty div with the class set to input-container. -->
 
 <form id="calorie-counter">
   <label for="budget">Budget</label>
   <input id="budget" type="number" min="0" placeholder="Daily calorie budget" required />
-</form>
+  <fieldset id="breakfast">
+    <legend>Breakfast</legend>
+    <div class="input-container"></div>
+  </fieldset>
+  </form>
 
 
 
