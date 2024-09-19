@@ -42,11 +42,16 @@ Continuing the pattern, create a fieldset for dinner with the same nested elemen
   <div class="input-container"></div>
 </fieldset>
 
-<!-- Step 8
-When users want to select a meal type to input their calorie counts, they should be presented with a dropdown menu and a button to add the meal type.
+<!-- Step 9
+In your span element, create a label element for an entry-dropdown and give it the text Add food or exercise:. Then create a select element with the id set to entry-dropdown and a name set to options. Below that, add a button element with the id set to add-entry and the text Add Entry.
 
-Start by creating a div element and assign it a class attribute with the value controls. Then, nest a span element inside this div.-->
-<div class="controls" ><span></span></div>
+Give your button element a type attribute set to button to prevent automatic form submission. -->
+<div class="controls" ><span>
+  <label for="entry-dropdown">Add food or exercise:</label>
+  <select name="options" id="entry-dropdown"></select>
+  <button id="add-entry" type="submit">Add Entry</button></div>
+</span>
+
 </form>
 
 
