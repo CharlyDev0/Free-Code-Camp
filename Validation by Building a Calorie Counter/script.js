@@ -1,13 +1,15 @@
 const calorieCounter = document.getElementById("calorie-counter");
 
-/* Step 22
-Your current pattern won't work just yet. /+-\s/ looks for +, -, and a space in order. This would match +- hello but would not match +hello.
+/* Step 24
+JavaScript provides a .replace() method that enables you to replace characters in a string with another string. This method accepts two arguments. The first argument is the character sequence to be replaced, which can be either a string or a regex pattern. The second argument is the string that replaces the matched sequence.
 
-To tell the pattern to match each of these characters individually, you need to turn them into a character class. This is done by wrapping the characters you want to match in brackets. For example, this pattern will match the characters h, e, l, or o:
+Since strings are immutable, the replace method returns a new string with the replaced characters.
+
+In this example, the replace method is used to replace all instances of the letter l with the number 1 in the string hello.
 
 Example Code
-const regex = /[helo]/;
-Turn your +-\s pattern into a character class. Note that you no longer need to escape the + character, because you are using a character class. */
+"hello".replace(/l/g, "1");
+Use your regex to replace all instances of +, -, and a space in str with an empty string. Return this value. */
 
 const budgetNumberInput = document.getElementById("budget");
 const entryDropdown = document.getElementById("entry-dropdown");
@@ -17,5 +19,7 @@ const  output = document.getElementById("output");
 let isError = false;
 
 
-function cleanInputString(str) {}
+function cleanInputString(str) {
 const regex = /[+-\s]/g;
+return str.replace(regex, "");
+}
