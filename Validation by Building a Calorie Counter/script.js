@@ -16,9 +16,15 @@ function cleanInputString(str) {
   const regex = /[+-\s]/g;
   return str.replace(regex, "");
 }
-/* Step 28
-In HTML, number inputs allow for exponential notation (such as 1e10). You need to filter those out.
+/* Step 30
+The e in a number input can also be an uppercase E. Regex has a flag for this, however – the i flag, which stands for "insensitive".
 
-Start by creating a function called isInvalidInput – it should take a single str parameter. */
+Example Code
+/Hello/i
+The following regex would match hello, Hello, HELLO, and even hElLo because of the i flag. This flag makes your pattern case-insensitive.
 
-function isInvalidInput(str){};
+Add the i flag to your regex pattern.*/
+
+function isInvalidInput(str){
+  let regex =/e/i;
+};
