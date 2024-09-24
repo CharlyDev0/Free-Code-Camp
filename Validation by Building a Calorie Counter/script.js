@@ -16,11 +16,9 @@ function cleanInputString(str) {
   const regex = /[+-\s]/g;
   return str.replace(regex, "");
 }
-/* Step 31
-Number inputs only allow the e to occur between two digits. To match any number, you can use the character class [0-9]. This will match any digit between 0 and 9.
-
-Add this character class before and after e in your pattern.*/
+/* Step 32
+The + modifier in a regex allows you to match a pattern that occurs one or more times. To match your digit pattern one or more times, add a plus after each of the digit character classes. For example: [0-9]+.*/
 
 function isInvalidInput(str){
-  let regex = /[0-9]e[0-9]/i;
+  let regex = /\d+e\d+/i;
 };
