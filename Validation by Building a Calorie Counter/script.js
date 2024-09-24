@@ -16,16 +16,15 @@ function cleanInputString(str) {
   const regex = /[+-\s]/g;
   return str.replace(regex, "");
 }
-/* Step 34
-Strings have a .match() method, which takes a regex argument. .match() will return an array of match results – containing either the first match, or all matches if the global flag is used.
+/* Step 35
+Now it is time to test your isInvalidInput function. For this test, you want to check if the function can detect scientific notation like 1e3 or 10e2. While this is a valid way to represent numbers, it is not a valid input for your calorie counter project.
 
-Example Code
-const str = 'example string';
-const regex = /example/;
-const result = str.match(regex); // Returns ['example']
-Return the result of calling the .match() method on str and passing your regex variable as the argument. You'll use this match result later on.*/
+Below your isInvalidInput function, add a console statement. Inside that console statement, call the isInvalidInput function with an argument of "1e3".
+
+Open up the console to see the result. In the next step, you will learn more about what that result means.*/
 
 function isInvalidInput(str){
   const regex = /\d+e\d+/i;
   return str.match(regex);
 };
+console.log(isInvalidInput("1e3"));
