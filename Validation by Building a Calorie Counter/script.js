@@ -21,7 +21,13 @@ function isInvalidInput(str){
   const regex = /\d+e\d+/i;
   return str.match(regex);
 };
-/* Step 38
-Your next step is to allow users to add entries to the calorie counter. Declare an empty function addEntry. This function should not take any parameters.*/
+/* Step 39
+You'll need to know which category the entry goes in. Thankfully, you added a dropdown for the user to select a category.
 
-function addEntry() {}
+Remember that you queried that dropdown earlier in your JavaScript and assigned it to the entryDropdown button. You can use the value property to get the value of the selected option.
+
+Use concatenation to add a # to the beginning of the value property of entryDropdown, and assign that result to a targetId variable.*/
+
+function addEntry() {
+  let targetId = "#" + entryDropdown.value;
+}
