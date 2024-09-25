@@ -21,10 +21,11 @@ function isInvalidInput(str){
   const regex = /\d+e\d+/i;
   return str.match(regex);
 };
-/* Step 41
-JavaScript has a feature called template literals, which allow you to interpolate variables directly within a string. Template literals are denoted with backticks ``, as opposed to single or double quotes. Variables can be passed in to a template literal by surrounding the variable with ${} – the value of the variable will be inserted into the string.*/
+/* Step 42
+Thanks to template literals, you actually don't need the targetId variable at all. Remove that variable, and update your template literal to replace targetId with entryDropdown.value – remember to add # before that, in the string.*/
 
 function addEntry() {
-   const targetId = "#" + entryDropdown.value;
-   const targetInputContainer = document.querySelector(`${targetId} .input-container`);
+   const targetInputContainer = document.querySelector(
+     `#${entryDropdown.value} .input-container`
+   );
 }
