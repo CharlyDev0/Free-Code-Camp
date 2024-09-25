@@ -16,28 +16,14 @@ function cleanInputString(str) {
   const regex = /[+-\s]/g;
   return str.replace(regex, "");
 }
-/* Step 36
-When you open the console, you should see this result:
+/* Step 37
+When you open the console, you should see the result of null. The match method returns null when no match is found. In this case, the isInvalidInput function should return null when the input is a valid number without any scientific notation.
 
-Example Code
-[ '1e3', index: 0, input: '1e3', groups: undefined ]
-The match method returns an array with any matches found in the string.
+null in JavaScript is a special primitive that represents the intentional absence of a value. In a boolean context, null is considered falsy which evaluates to false in a conditional statement.
 
-Here is a complete breakdown of that information:
-The match method returns an array with any matches found in the string.
-
-Here is a complete breakdown of that information:
-
-"1e3" is the matched value against the /\d+e\d+/i regex.
-index: 0 is the index of the matched value in the string.
-input: '1e3' is the original string that was matched.
-groups: undefined are the matched groups, which are not used in this case. You will learn more about groups in a later project.
-Now it is time to test for a valid input. Update your console statement to the following: console.log(isInvalidInput("10")).
-
-Open up the console to see the result. You will learn more about what this result means in the next step.*/
+Now that you have finished testing your isInvalidInput function, you can remove the console.log statement.*/
 
 function isInvalidInput(str){
   const regex = /\d+e\d+/i;
   return str.match(regex);
 };
-console.log(isInvalidInput("10"));
