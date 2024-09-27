@@ -21,8 +21,8 @@ function isInvalidInput(str){
   const regex = /\d+e\d+/i;
   return str.match(regex);
 };
-/* Step 45
-Now you need to build your dynamic HTML string to add to the webpage. Declare a new HTMLString variable, and assign it an empty template literal string. */
+/* Step 46
+Inside your template literal, create a label element and give it the text Entry # Name. Using your template literal syntax, replace # with the value of entryNumber. */
 
 function addEntry() {
    const targetInputContainer = document.querySelector(
@@ -30,5 +30,5 @@ function addEntry() {
    );
    const entryNumber =
      targetInputContainer.querySelectorAll('input[type="text"]').length;
-     let HTMLString = ``;
+     let HTMLString = `<label>Entry ${entryNumber} Name</label>`;
 }
