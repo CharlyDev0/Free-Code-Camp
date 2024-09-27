@@ -21,8 +21,8 @@ function isInvalidInput(str){
   const regex = /\d+e\d+/i;
   return str.match(regex);
 };
-/* Step 46
-Inside your template literal, create a label element and give it the text Entry # Name. Using your template literal syntax, replace # with the value of entryNumber. */
+/* Step 47
+Give your label element a for attribute with the value X-#-name, where X is the value of the entryDropdown element and # is the value of entryNumber. Remember that HTML attributes should be wrapped in double quotes. */
 
 function addEntry() {
    const targetInputContainer = document.querySelector(
@@ -30,5 +30,5 @@ function addEntry() {
    );
    const entryNumber =
      targetInputContainer.querySelectorAll('input[type="text"]').length;
-     let HTMLString = `<label>Entry ${entryNumber} Name</label>`;
+     let HTMLString = `<label for="${entryDropdown.value}-${entryNumber}-name" >Entry ${entryNumber} Name</label>`;
 }
