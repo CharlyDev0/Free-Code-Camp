@@ -21,10 +21,13 @@ function isInvalidInput(str){
   const regex = /\d+e\d+/i;
   return str.match(regex);
 };
-/* Step 51
-To see your new HTML content for the targetInputContainer, you will need to use the innerHTML property.
+/* Step 52
+The addEventListener method takes two arguments. The first is the event to listen to. (Ex. 'click') The second is the callback function, or the function that runs when the event is triggered.
 
-The innerHTML property sets or returns the HTML content inside an element. */
+Call the .addEventListener() method on the addEntryButton. Pass in the string "click" for the first argument and the addEntry function for the second argument.
+
+Note that you should not call addEntry, but pass the variable (or function reference) directly.
+ */
 
 function addEntry() {
    const targetInputContainer = document.querySelector(
@@ -39,4 +42,5 @@ function addEntry() {
   <input type="number" min="0"  id="${entryDropdown.value}-${entryNumber}-calories" placeholder="Calories" />`;
   targetInputContainer.innerHTML += HTMLString;
   }
+  addEntryButton.addEventListener("click", addEntry);
 
