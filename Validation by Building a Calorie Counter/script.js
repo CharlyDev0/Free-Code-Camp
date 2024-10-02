@@ -21,12 +21,10 @@ function isInvalidInput(str){
   const regex = /\d+e\d+/i;
   return str.match(regex);
 };
-/* Step 52
-The addEventListener method takes two arguments. The first is the event to listen to. (Ex. 'click') The second is the callback function, or the function that runs when the event is triggered.
+/* Step 53
+Try adding a couple of entries to the Breakfast category, and you may notice some bugs! The first thing we need to fix is the entry counts – the first entry should have a count of 1, not 0.
 
-Call the .addEventListener() method on the addEntryButton. Pass in the string "click" for the first argument and the addEntry function for the second argument.
-
-Note that you should not call addEntry, but pass the variable (or function reference) directly.
+This bug occurs because you are querying for input[type="text"] elements before adding the new entry to the page. To fix this, update your entryNumber variable to be the value of the length of the query plus 1. Add this on your declaration line, not in your template strings.
  */
 
 function addEntry() {
@@ -34,7 +32,7 @@ function addEntry() {
      `#${entryDropdown.value} .input-container`
    );
    const entryNumber =
-     targetInputContainer.querySelectorAll('input[type="text"]').length;
+     targetInputContainer.querySelectorAll('input[type="text"]').length +1;
      const HTMLString = `
   <label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>
   <input type="text" id="${entryDropdown.value}-${entryNumber}-name" placeholder="Name" />
