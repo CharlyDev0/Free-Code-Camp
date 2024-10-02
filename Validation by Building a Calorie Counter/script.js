@@ -21,13 +21,7 @@ function isInvalidInput(str){
   const regex = /\d+e\d+/i;
   return str.match(regex);
 };
-/* Step 55
-The insertAdjacentHtml method takes two arguments. The first argument is a string that specifies the position of the inserted element. The second argument is a string containing the HTML to be inserted.
 
-For the first argument, pass the string "beforeend" to insert the new element as the last child of targetInputContainer.
-
-For the second argument, pass your HTMLString variable.
- */
 
 function addEntry() {
    const targetInputContainer = document.querySelector(
@@ -42,5 +36,13 @@ function addEntry() {
   <input type="number" min="0"  id="${entryDropdown.value}-${entryNumber}-calories" placeholder="Calories" />`;
   targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
   }
+  /* Step 56
+Great! Now you can add entries without losing your previous inputs.
+
+Your next step is to write a function that will get the calorie counts from the user's entries.
+
+Declare a getCaloriesFromInputs function, and give it a parameter called list.
+ */
+  function getCaloriesFromInputs (list){};
   addEntryButton.addEventListener("click", addEntry);
 
