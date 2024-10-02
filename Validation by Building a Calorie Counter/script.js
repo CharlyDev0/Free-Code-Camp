@@ -36,11 +36,13 @@ function addEntry() {
   <input type="number" min="0"  id="${entryDropdown.value}-${entryNumber}-calories" placeholder="Calories" />`;
   targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
   }
-  /* Step 57
-In your new function, declare a calories variable and assign it the value 0. Use let to declare it, since you will be reassigning it later.
+  /* Step 58
+Create a for...of loop that loops through the list. For the loop's variable name, use const to declare a variable called item.
  */
   function getCaloriesFromInputs (list){
     let calories = 0;
+    for (const item of list) {
+    }
   };
   addEntryButton.addEventListener("click", addEntry);
 
