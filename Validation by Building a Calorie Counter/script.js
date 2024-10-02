@@ -21,10 +21,12 @@ function isInvalidInput(str){
   const regex = /\d+e\d+/i;
   return str.match(regex);
 };
-/* Step 53
-Try adding a couple of entries to the Breakfast category, and you may notice some bugs! The first thing we need to fix is the entry counts – the first entry should have a count of 1, not 0.
+/* Step 55
+The insertAdjacentHtml method takes two arguments. The first argument is a string that specifies the position of the inserted element. The second argument is a string containing the HTML to be inserted.
 
-This bug occurs because you are querying for input[type="text"] elements before adding the new entry to the page. To fix this, update your entryNumber variable to be the value of the length of the query plus 1. Add this on your declaration line, not in your template strings.
+For the first argument, pass the string "beforeend" to insert the new element as the last child of targetInputContainer.
+
+For the second argument, pass your HTMLString variable.
  */
 
 function addEntry() {
@@ -38,7 +40,7 @@ function addEntry() {
   <input type="text" id="${entryDropdown.value}-${entryNumber}-name" placeholder="Name" />
   <label for="${entryDropdown.value}-${entryNumber}-calories">Entry ${entryNumber} Calories</label>
   <input type="number" min="0"  id="${entryDropdown.value}-${entryNumber}-calories" placeholder="Calories" />`;
-  targetInputContainer.insertAdjacentHTML();
+  targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
   }
   addEntryButton.addEventListener("click", addEntry);
 
