@@ -36,12 +36,14 @@ function addEntry() {
   <input type="number" min="0"  id="${entryDropdown.value}-${entryNumber}-calories" placeholder="Calories" />`;
   targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
   }
-  /* Step 58
-Create a for...of loop that loops through the list. For the loop's variable name, use const to declare a variable called item.
+  /* Step 59
+The NodeList values you will pass to list will consist of input elements. So you will want to look at the value attribute of each element.
+Assign item.value to a const variable called currVal.
  */
   function getCaloriesFromInputs (list){
     let calories = 0;
     for (const item of list) {
+      const currVal = item.value;
     }
   };
   addEntryButton.addEventListener("click", addEntry);
