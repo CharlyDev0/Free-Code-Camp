@@ -36,14 +36,14 @@ function addEntry() {
   <input type="number" min="0"  id="${entryDropdown.value}-${entryNumber}-calories" placeholder="Calories" />`;
   targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
   }
-  /* Step 59
-The NodeList values you will pass to list will consist of input elements. So you will want to look at the value attribute of each element.
-Assign item.value to a const variable called currVal.
+  /* Step 60
+Remember that you wrote a function earlier to clean the user's input? You'll need to use that function here.
+Update your currVal declaration to be the result of calling cleanInputString with item.value.
  */
   function getCaloriesFromInputs (list){
     let calories = 0;
     for (const item of list) {
-      const currVal = item.value;
+      const currVal = cleanInputString(item.value);
     }
   };
   addEntryButton.addEventListener("click", addEntry);
