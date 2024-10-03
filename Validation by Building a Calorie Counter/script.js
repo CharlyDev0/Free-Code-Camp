@@ -36,10 +36,8 @@ function addEntry() {
   <input type="number" min="0"  id="${entryDropdown.value}-${entryNumber}-calories" placeholder="Calories" />`;
   targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
   }
-  /* Step 64
-In programming, null is meant to represent the absence of a value. In this case, if the user enters an invalid input, you want to alert them and then return null to indicate that the function has failed.
-
-Still within your if block, set isError to true and return null.
+  /* Step 66
+After your for loop has completed, return the calories value.
  */
   function getCaloriesFromInputs (list){
     let calories = 0;
@@ -53,6 +51,7 @@ Still within your if block, set isError to true and return null.
       }
       calories += Number(currVal);
     }
+    return calories;
   };
   addEntryButton.addEventListener("click", addEntry);
 
