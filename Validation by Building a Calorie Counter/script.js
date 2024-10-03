@@ -51,6 +51,7 @@ Still within your if block, set isError to true and return null.
         isError = true;
         return null;
       }
+      calories += Number(currVal);
     }
   };
   addEntryButton.addEventListener("click", addEntry);
