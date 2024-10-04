@@ -36,8 +36,8 @@ function addEntry() {
   <input type="number" min="0"  id="${entryDropdown.value}-${entryNumber}-calories" placeholder="Calories" />`;
   targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
   }
-  /* Step 73
-Now declare a lunchCalories variable, and give it the value of calling getCaloriesFromInputs with your lunchNumberInputs.
+  /* Step 74
+Following this same pattern, declare variables for the number inputs in the #dinner, #snacks, and #exercise elements. Assign them the appropriate getCaloriesFromInputs calls.
  */
 function calculateCalories(e) {
   e.preventDefault();
@@ -62,6 +62,9 @@ function calculateCalories(e) {
   );
   let breakfastCalories = getCaloriesFromInputs(breakfastNumberInputs);
   let lunchCalories = getCaloriesFromInputs(lunchNumberInputs);
+  let dinnerCalories = getCaloriesFromInputs(dinnerNumberInputs);
+  let snacksCalories = getCaloriesFromInputs(snacksNumberInputs);
+  let exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
 
 }
   function getCaloriesFromInputs (list){
