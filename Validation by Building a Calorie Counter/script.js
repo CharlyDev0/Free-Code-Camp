@@ -36,9 +36,7 @@ function addEntry() {
   <input type="number" min="0"  id="${entryDropdown.value}-${entryNumber}-calories" placeholder="Calories" />`;
   targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
   }
-  /* Step 78
-Now declare a remainingCalories variable, and give it the value of subtracting consumedCalories from budgetCalories and adding exerciseCalories.
- */
+  
 function calculateCalories(e) {
   e.preventDefault();
   isError = false;
@@ -67,10 +65,16 @@ function calculateCalories(e) {
   let snacksCalories = getCaloriesFromInputs(snacksNumberInputs);
   let exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
   if (isError) return;
-let consumedCalories =
-  breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
+  let consumedCalories =
+    breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
 
   let remainingCalories = budgetCalories - consumedCalories + exerciseCalories;
+  /* Step 79
+You need to know if the user is in a caloric surplus or deficit. A caloric surplus is when you consume more calories than you burn, and a caloric deficit is when you burn more calories than you consume. Burning as many calories as you consume is called maintenance, and can be thought of as a surplus or deficit of 0, depending on your goals.
+
+Declare a surplusOrDeficit variable. Then use a ternary operator to set surplusOrDeficit to the string "Surplus" or "Deficit" depending on whether remainingCalories is less than 0. If it is less than 0, then surplusOrDeficit should be "Surplus". Otherwise, it should be "Deficit".
+ */
+  const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit";
 }
   function getCaloriesFromInputs (list){
     let calories = 0;
