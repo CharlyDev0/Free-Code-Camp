@@ -36,8 +36,8 @@ function addEntry() {
   <input type="number" min="0"  id="${entryDropdown.value}-${entryNumber}-calories" placeholder="Calories" />`;
   targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
   }
-  /* Step 77
-It is time to start preparing your calculations. Start by declaring a consumedCalories variable, and assign it the sum of breakfastCalories, lunchCalories, dinnerCalories, and snacksCalories (note that order matters for the tests). Be sure to do this after your if statement.
+  /* Step 78
+Now declare a remainingCalories variable, and give it the value of subtracting consumedCalories from budgetCalories and adding exerciseCalories.
  */
 function calculateCalories(e) {
   e.preventDefault();
@@ -69,6 +69,8 @@ function calculateCalories(e) {
   if (isError) return;
 let consumedCalories =
   breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
+
+  let remainingCalories = budgetCalories - consumedCalories + exerciseCalories;
 }
   function getCaloriesFromInputs (list){
     let calories = 0;
