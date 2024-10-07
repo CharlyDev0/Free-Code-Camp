@@ -69,11 +69,10 @@ function calculateCalories(e) {
     breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
 
   let remainingCalories = budgetCalories - consumedCalories + exerciseCalories;
-  /* Step 80
-You need to construct the HTML string that will be displayed in the output element. Start by assigning an empty template literal to the innerHTML property of the output element on a new line at the end of the function.
+  /* Step 81
  */
   const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit";
-  output.innerHTML = ``;
+  output.innerHTML = `<span class="${surplusOrDeficit.toLowerCase()}"></span>`;
 }
   function getCaloriesFromInputs (list){
     let calories = 0;
