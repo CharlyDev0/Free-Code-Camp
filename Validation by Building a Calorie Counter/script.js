@@ -36,8 +36,8 @@ function addEntry() {
   <input type="number" min="0"  id="${entryDropdown.value}-${entryNumber}-calories" placeholder="Calories" />`;
   targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
   }
-  /* Step 76
-Your getCaloriesFromInputs function will set the global error flag to true if an invalid input is detected. Add an if statement to your calculateCalories function that checks the truthiness of your global error flag, and if it is truthy then use return to end the function execution.
+  /* Step 77
+It is time to start preparing your calculations. Start by declaring a consumedCalories variable, and assign it the sum of breakfastCalories, lunchCalories, dinnerCalories, and snacksCalories (note that order matters for the tests). Be sure to do this after your if statement.
  */
 function calculateCalories(e) {
   e.preventDefault();
@@ -67,7 +67,8 @@ function calculateCalories(e) {
   let snacksCalories = getCaloriesFromInputs(snacksNumberInputs);
   let exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
   if (isError) return;
-
+let consumedCalories =
+  breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
 }
   function getCaloriesFromInputs (list){
     let calories = 0;
