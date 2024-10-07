@@ -36,12 +36,8 @@ function addEntry() {
   <input type="number" min="0"  id="${entryDropdown.value}-${entryNumber}-calories" placeholder="Calories" />`;
   targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
   }
-  /* Step 75
-You also need to get the value of your #budget input. You already queried this at the top of your code, and set it to the budgetNumberInput variable. However, you used getElementById, which returns an Element, not a NodeList.
-
-A NodeList is an array-like object, which means you can iterate through it and it shares some common methods with an array. For your getCaloriesFromInputs function, an array will work for the argument just as well as a NodeList does.
-
-Declare a budgetCalories variable and set it to the result of calling getCaloriesFromInputs – pass an array containing your budgetNumberInput as the argument.
+  /* Step 76
+Your getCaloriesFromInputs function will set the global error flag to true if an invalid input is detected. Add an if statement to your calculateCalories function that checks the truthiness of your global error flag, and if it is truthy then use return to end the function execution.
  */
 function calculateCalories(e) {
   e.preventDefault();
@@ -70,6 +66,7 @@ function calculateCalories(e) {
   let dinnerCalories = getCaloriesFromInputs(dinnerNumberInputs);
   let snacksCalories = getCaloriesFromInputs(snacksNumberInputs);
   let exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
+  if (isError) return;
 
 }
   function getCaloriesFromInputs (list){
