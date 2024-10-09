@@ -96,7 +96,9 @@ function calculateCalories(e) {
     }
     return calories;
   };
-  function clearForm(){};
+  function clearForm(){
+    let inputContainers = document.querySelectorAll(".input-container");
+  };
   addEntryButton.addEventListener("click", addEntry);
   /* Step 89
 Your final feature to add is the ability for a user to clear the form. Start by declaring an empty function called clearForm – it should not take any arguments.
