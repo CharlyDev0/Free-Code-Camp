@@ -106,9 +106,10 @@ function calculateCalories(e) {
     output.classList.add("hide");
   };
   addEntryButton.addEventListener("click", addEntry);
-  /* Step 95
-To finish off this function, you need to restore the hide class to the output element. The classList property has an .add() method which is the opposite of the .remove() method. It accepts a string representing the class to add to the element.
+  /* Step 96
+To complete this project, add an event listener to the clearButton button. When the button is clicked, it should call the clearForm function.
 
-Add the hide class to your output.
+Congratulations! Your project is complete.
    */
   calorieCounter.addEventListener("submit", calculateCalories);
+  clearButton.addEventListener("click", clearForm);
