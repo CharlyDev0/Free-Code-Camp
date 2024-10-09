@@ -69,11 +69,13 @@ function calculateCalories(e) {
     breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
 
   let remainingCalories = budgetCalories - consumedCalories + exerciseCalories;
-  /* Step 82
-Give your span the text remainingCalories Calorie surplusOrDeficit, using interpolation to replace remainingCalories and surplusOrDeficit with the appropriate variables.
+  /* Step 83
+In your span text, wrap your remainingCalories reference in Math.abs() to ensure that the value is positive.
    */
   const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit";
-  output.innerHTML = `<span class="${surplusOrDeficit.toLowerCase()}">${remainingCalories} Calorie ${surplusOrDeficit}</span>
+  output.innerHTML = `<span class="${surplusOrDeficit.toLowerCase()}">${Math.abs(
+    remainingCalories
+  )} Calorie ${surplusOrDeficit}</span>
   `;
 }
   function getCaloriesFromInputs (list){
