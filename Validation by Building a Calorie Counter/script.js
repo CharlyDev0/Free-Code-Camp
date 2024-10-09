@@ -101,11 +101,10 @@ function calculateCalories(e) {
     for (const container of inputContainers) {
       container.innerHTML="";
     }
+    budgetNumberInput.value = "";
   };
   addEntryButton.addEventListener("click", addEntry);
-  /* Step 92
-It is time for another loop. Create a for...of loop with a variable called container to iterate through the inputContainers array.
-
-Inside the loop, set the innerHTML property of the container to an empty string. This will clear all of the contents of that input container.
+  /* Step 93
+After your loop completes, you need to clear the budgetNumberInput. Set the value property of budgetNumberInput to an empty string.
    */
   calorieCounter.addEventListener("submit", calculateCalories);
