@@ -69,10 +69,8 @@ function calculateCalories(e) {
     breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
 
   let remainingCalories = budgetCalories - consumedCalories + exerciseCalories;
-  /* Step 85
-Now create a p element with the text budgetCalories Calories Budgeted, using interpolation to replace budgetCalories with the appropriate variable.
-
-This should come after your hr element.
+  /* Step 86
+Using the same interpolation syntax, add a second p element with the text consumedCalories Calories Consumed and a third with the text exerciseCalories Calories Burned. Remember to replace your consumedCalories and exerciseCalories variables with the appropriate values.
    */
   const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit";
   output.innerHTML = `<span class="${surplusOrDeficit.toLowerCase()}">${Math.abs(
@@ -80,8 +78,9 @@ This should come after your hr element.
   )} Calorie ${surplusOrDeficit}</span>
   <hr/>
   <p>${budgetCalories} Calories Budgeted</p>
+  <p>${consumedCalories} Calories Consumed</p>
+  <p>${exerciseCalories} Calories Burned</p>
   `;
-  
 }
   function getCaloriesFromInputs (list){
     let calories = 0;
