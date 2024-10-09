@@ -69,9 +69,7 @@ function calculateCalories(e) {
     breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
 
   let remainingCalories = budgetCalories - consumedCalories + exerciseCalories;
-  /* Step 87
-Use the .remove() method of the output variable's classList property to remove the hide class. Don't forget to place the word hide inside quotes.
-   */
+  
   const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit";
   output.innerHTML = `<span class="${surplusOrDeficit.toLowerCase()}">${Math.abs(
     remainingCalories
@@ -99,4 +97,9 @@ Use the .remove() method of the output variable's classList property to remove t
     return calories;
   };
   addEntryButton.addEventListener("click", addEntry);
+  /* Step 88
+If you click on your Calculate Remaining Calories button, you'll see that nothing happens. You still need to mount the event listener.
 
+Add an event listener to your calorieCounter element. The event type should be submit, and the callback function should be calculateCalories.
+   */
+  calorieCounter.addEventListener("submit", calculateCalories);
