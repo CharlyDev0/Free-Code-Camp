@@ -69,8 +69,8 @@ function calculateCalories(e) {
     breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
 
   let remainingCalories = budgetCalories - consumedCalories + exerciseCalories;
-  /* Step 86
-Using the same interpolation syntax, add a second p element with the text consumedCalories Calories Consumed and a third with the text exerciseCalories Calories Burned. Remember to replace your consumedCalories and exerciseCalories variables with the appropriate values.
+  /* Step 87
+Use the .remove() method of the output variable's classList property to remove the hide class. Don't forget to place the word hide inside quotes.
    */
   const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit";
   output.innerHTML = `<span class="${surplusOrDeficit.toLowerCase()}">${Math.abs(
@@ -81,6 +81,7 @@ Using the same interpolation syntax, add a second p element with the text consum
   <p>${consumedCalories} Calories Consumed</p>
   <p>${exerciseCalories} Calories Burned</p>
   `;
+  output.classList.remove("hide");
 }
   function getCaloriesFromInputs (list){
     let calories = 0;
