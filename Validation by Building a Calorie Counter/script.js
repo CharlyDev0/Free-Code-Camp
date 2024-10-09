@@ -69,13 +69,15 @@ function calculateCalories(e) {
     breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
 
   let remainingCalories = budgetCalories - consumedCalories + exerciseCalories;
-  /* Step 83
-In your span text, wrap your remainingCalories reference in Math.abs() to ensure that the value is positive.
+  /* Step 84
+After your span element, add an hr element to create a horizontal line.
+To keep your code clean and readable, you should add this on a new line in the template literal.
    */
   const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit";
   output.innerHTML = `<span class="${surplusOrDeficit.toLowerCase()}">${Math.abs(
     remainingCalories
   )} Calorie ${surplusOrDeficit}</span>
+  <hr/>
   `;
 }
   function getCaloriesFromInputs (list){
@@ -86,6 +88,7 @@ In your span text, wrap your remainingCalories reference in Math.abs() to ensure
       if (invalidInputMatch) {
         alert(`Invalid Input: ${invalidInputMatch[0]}`);
         isError = true;
+        
         return null;
       }
       calories += Number(currVal);
