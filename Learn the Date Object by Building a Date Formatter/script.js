@@ -11,10 +11,7 @@ currentDateParagraph.textContent = formattedDate;
 
 dateOptionsSelectElement.addEventListener("change", () => {
   switch (dateOptionsSelectElement.value) {
-    case value:
-      break;
-
-    default:
-      break;
+    case "yyyy-mm-dd":
+      currentDateParagraph.textContent = formattedDate;
   }
 });
