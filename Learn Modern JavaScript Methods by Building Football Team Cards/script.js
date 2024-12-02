@@ -3,8 +3,16 @@ const teamName = document.getElementById("team");
 const typeOfSport = document.getElementById("sport");
 const worldCupYear = document.getElementById("year");
 
-/* Step 9
-Below the headCoach property, create a new property with a key named players with the value of an empty array.*/
+/* Step 10
+Inside that players array, create a new object with the following properties:
+
+Example Code
+name: "Sergio Almirón"
+position: "forward"
+number: 1
+isCaptain: false
+nickname: null
+NOTE: The numbers for the team are organized alphabetically by last name. This differs from conventional numbering where the numbers correspond with what is on the player's jerseys.*/
 
 const headCoach = document.getElementById("head-coach");
 const playerCards = document.getElementById("player-cards");
@@ -18,5 +26,13 @@ const myFavoriteFootballTeam = {
     coachName: "Carlos Bilardo",
     matches: 7,
   },
-  players: [],
+  players: [
+    {
+      name: "Sergio Almirón",
+      position: "forward",
+      number: 1,
+      isCaptain: false,
+      nickname: null,
+    },
+  ],
 };
