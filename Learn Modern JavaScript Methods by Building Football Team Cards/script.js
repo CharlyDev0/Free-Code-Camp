@@ -3,8 +3,8 @@ const teamName = document.getElementById("team");
 const typeOfSport = document.getElementById("sport");
 const worldCupYear = document.getElementById("year");
 
-/* Step 8
-Inside the headCoach object, add a property with a key of coachName and a string value of "Carlos Bilardo". Below that property, add another key called matches with a number value of 7.*/
+/* Step 9
+Below the headCoach property, create a new property with a key named players with the value of an empty array.*/
 
 const headCoach = document.getElementById("head-coach");
 const playerCards = document.getElementById("player-cards");
@@ -18,4 +18,5 @@ const myFavoriteFootballTeam = {
     coachName: "Carlos Bilardo",
     matches: 7,
   },
+  players: [],
 };
