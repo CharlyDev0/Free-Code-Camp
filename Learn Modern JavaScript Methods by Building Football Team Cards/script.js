@@ -34,10 +34,6 @@ const myFavoriteFootballTeam = {
     },
   ],
 };
-/* Step 15
-In the last two steps, you have been accessing properties from the myFavoriteFootballTeam object using dot notation and assigning them to new const variables. But in JavaScript, there is an easier way to accomplish the same goal.
-
-Object.freeze(myFavoriteFootballTeam);
-const sport = myFavoriteFootballTeam.sport;
-const team = myFavoriteFootballTeam.team;*/
-const { sport, team } = myFavoriteFootballTeam;
+/* Step 16
+Next, add the year and players to your destructuring assignment.*/
+const { sport, team, year, players } = myFavoriteFootballTeam;
