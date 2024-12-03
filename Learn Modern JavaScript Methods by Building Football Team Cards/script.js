@@ -34,6 +34,6 @@ const myFavoriteFootballTeam = {
     },
   ],
 };
-/* Step 16
-Next, add the year and players to your destructuring assignment.*/
+/* Step 17*/
 const { sport, team, year, players } = myFavoriteFootballTeam;
+const { coachName } = myFavoriteFootballTeam.headCoach;
