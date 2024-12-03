@@ -39,6 +39,13 @@ const { sport, team, year, players } = myFavoriteFootballTeam;
 const { coachName } = myFavoriteFootballTeam.headCoach;
 
 typeOfSport.textContent = sport;
-/* Step 19
-Next, assign the team variable to teamName.textContent.*/
 teamName.textContent = team;
+
+worldCupYear.textContent = year;
+headCoach.textContent = coachName;
+/* Step 21
+Now you will start building out the function that will show player cards based on the selections made by the user in the Filter Teammates dropdown menu.
+
+Start by creating an empty arrow function called setPlayerCards. You do not need to add a parameter because that will be taken care of in the next step.*/
+
+const setPlayerCards = () => {};
