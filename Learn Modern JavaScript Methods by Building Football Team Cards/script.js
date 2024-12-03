@@ -34,9 +34,10 @@ const myFavoriteFootballTeam = {
     },
   ],
 };
-/* Step 14
-Below the sport variable, access the key called team from the myFavoriteFootballTeam object and assign it to a new const variable called team.
-*/
+/* Step 15
+In the last two steps, you have been accessing properties from the myFavoriteFootballTeam object using dot notation and assigning them to new const variables. But in JavaScript, there is an easier way to accomplish the same goal.
+
 Object.freeze(myFavoriteFootballTeam);
 const sport = myFavoriteFootballTeam.sport;
-const team = myFavoriteFootballTeam.team;
+const team = myFavoriteFootballTeam.team;*/
+const { sport, team } = myFavoriteFootballTeam;
