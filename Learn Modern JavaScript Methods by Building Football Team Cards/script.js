@@ -43,16 +43,11 @@ teamName.textContent = team;
 
 worldCupYear.textContent = year;
 headCoach.textContent = coachName;
-/* Step 22
-Function parameters can be initialized with default values. If a function is called without an argument, then the default value will be used:
+/* Step 23
+The next step is to create a new array that will be responsible for adding the player card information to the page.
 
-Example Code
-const greeting = (name = "Anonymous") => {
-  return "Hello " + name;
-} 
+Inside the setPlayerCards function, start by adding the map method to arr that will take in an empty callback function. Then, use the addition assignment += operator to assign the new array to playerCards.innerHTML.
 
-console.log(greeting("John")); // Hello John
-console.log(greeting()); // Hello Anonymous
-Add a new parameter to your setPlayerCards function called arr and assign it a default value of players. Remember that you destructured the players variable from the myFavoriteFootballTeam object on line 175.*/
+Remember that the innerHTML property gets, or in this case, sets the HTML markup for the playerCards element.*/
 
-const setPlayerCards = (arr = players) => {};
+const setPlayerCards = (arr = players) => {playerCards.innerHTML += arr.map(() => {})};
