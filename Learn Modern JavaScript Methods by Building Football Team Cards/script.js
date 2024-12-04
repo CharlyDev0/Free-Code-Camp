@@ -55,5 +55,7 @@ function myExampleFunction({ name, age, job, city }) {
 Inside the parameter list in the callback function for the map method, unpack all 5 object properties from objects in arr using object destructuring.*/
 
 const setPlayerCards = (arr = players) => {playerCards.innerHTML += arr.map(
-  ({ name, position, number, isCaptain, nickname }) => {}
+  ({ name, position, number, isCaptain, nickname }) => {
+    `<div class="player-card"></div>`;
+  }
 );};
