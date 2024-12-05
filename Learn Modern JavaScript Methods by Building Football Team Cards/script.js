@@ -43,15 +43,15 @@ teamName.textContent = team;
 
 worldCupYear.textContent = year;
 headCoach.textContent = coachName;
-/* Step 27
-The next step would be to display the word (Captain) next to the player if they are listed as a captain for the team.
-
-Before the ${name} expression, add a new embedded expression. Inside that expression, use a ternary operator to check if isCaptain is true. If so, return "(Captain)" otherwise return an empty string.*/
+/* Step 30
+Below your existing paragraph elements, add another paragraph element with the text Nickname: .*/
 
 const setPlayerCards = (arr = players) => {playerCards.innerHTML += arr.map(
   ({ name, position, number, isCaptain, nickname }) => {
-    `<div class="player-card"><h2>${
-      isCaptain ? "(Captain)" : ""
-    } ${name}</h2></div>`;    
+    `<div class="player-card"><h2>${isCaptain ? "(Captain)" : ""} ${name}</h2>
+    <p>Position:${position}</p>
+    <p>Number:${number}</p>   
+    <p>Nickname: </p> 
+  </div>`;    
   }
 );};
